@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=0.1">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>JM926</title>
+
+		<style>
+		:root {
+			--main-radius: 5px;
+			--main-padding: 5px;
+		}
+
+		body {
+			font-family: "Inter", sans-serif;
+			background-color:#78949f;
+		}
+
+		.container {
+			display: grid;
+			height: 200vh;
+			width: 60vw;
+			margin-left: auto;
+			margin-right: auto;
+			grid-template-columns: 2fr 1fr;
+			grid-template-rows: 1fr 5fr;
+			grid-template-areas:
+				"title title"
+				"main contact";
+			grid-gap: 0.3rem;
+			font-weight: 500;
+			font-size: 18px;
+			text-align: center;
+		}
+
+		.hr-rounded {
+			border-top: 2px solid #bbb;
+			border-radius: 3px;
+			margin:15px 0;
+		}
+
+		#title {
+			background: url("https://raw.githubusercontent.com/JaysinhMaher/Coursework-unit-2---HTML-CV/main/Title-background.jpg");
+			color: black;
+			grid-area: title;
+			border-radius: var(--main-radius);
+			padding-top: var(--main-padding);
+			text-transform: uppercase;
+			text-decoration: underline;
+			padding: 0;
+			height:350px;
+		}
+
+		.innerContent {
+			background-color:rgba(216, 221, 234, 0.4);
+			height: 150px;
+			padding:30px;
+			margin:70px;
+			border-radius:5px;
+		}
+
+		#main {
+			color: white;
+			background-color:#18434e;
+			color:#d8ddea;
+			grid-area: main;
+			border-radius: var(--main-radius);
+			padding-top: var(--main-padding);
+			padding:20px;
+		}
+
+		ul {
+			text-align: center;
+			list-style-position: inside;
+		}
+
+		ul li {
+			margin-bottom:15px;
+		}
+
+		a {
+			color:#d8ddea;
+		}
+
+		a:hover {
+			color:#a1bdd0;
+		}
+
+		#contact {
+			color: white;
+			background-color:#d8ddea;
+			color:#18434e;
+			grid-area: contact;
+			border-radius: var(--main-radius);
+			padding-top: var(--main-padding);
+			padding:20px;
+		}
+
+		#wrap {
+			position:relative;
+			overflow:hidden;
+			height:100%;
+			color:black;
+		}
+
+		#QuoteIMG {
+			opacity:0.5;
+			position:absolute;
+			left:0;
+			top:0;
+			width:100%;
+			height: 367px;
+			border-bottom-right-radius:5px;
+			border-bottom-left-radius:5px;
+		}
+
+		.QuoteContent {
+			position:relative;
+			padding-top:10px;
+		}
+
+		.Quote {
+			padding:10px;
+			font-family:Arial;
+			font-style:italic;
+			font-size:25px;
+			font-weight:bold;
+		}
+
+		.underline {
+			text-decoration:underline;
+		}
+
+		</style>
+	</head>
+	
+	<body>
+		<div class="container">
+		
+		<div id="title">
+			<div class="innerContent">
+			<h1>JM926</h1>
+			<h2>Software engineering</h2>
+			</div>
+		</div>
+			
+		<div id="main">
+			<h2 class="underline">About me:</h2>
+			
+			<ul>
+						<li> Currently Studying Software Engineering at the <br /><a href="https://le.ac.uk/" target="_blank">The University of Leicester</a></li>
+						<li> Interested in pursing a career in Programming </li>
+						<li> Currently know SQL, Python, HTML, CSS </li>
+					</ul>
+			
+			
+			<hr class="hr-rounded">
+			<h2 class="underline">Strengths:</h2>
+			<p>I believe that one of my core strengths is leadership, this is because I am comfortable taking the lead and prefer to produce a plan, which mitigates the risk that our final output is poor, by helping ensure our time is used effectively. </p>
+			<p>Leadership is the ability to lead team members, which could entail devising a plan or making sure everyone involved is on track.</p>
+			
+			<p>Growing up I was not insanely confident and found it difficult to take charge. However, I became a better leader after my work experience placement in business named “PVS” which was a tech repair company. While there I was given opportunities to develop our leadership skills by allowing us to work in groups. I realised that people often didn’t mind someone taking charge but were rather relieved to have a proper plan.</p>
+			<p>My strength is extremely useful in both summative and informative coursework units, because I can lead in group coursework units, ensuring we stay on track, using our time effectively. This is also useful in formative units as we can submit work in time for feedback and is even more crucial in summative units as the quality of our work directly impacts our grade</p>
+			<hr class="hr-rounded">
+			<h2 class="underline">Motivations:</h2>
+			<p>My main motivation when studying is to develop new skills and improve as much as possible.</p>
+			<p>Skills are vital in the workplace and is one of them most important things employers look for, and therefore my expanding my skillset motivates my studies.</p>
+			<p>Skills are traits or capabilities that you possess that are useful when carrying out tasks.</p>
+			<p>When studying computer science at sixth form, during our programming NEA assignment, I found a great interest in coding.</p>
+			<p>I enjoyed it and began trying to refine my programming skills in my free time too. Over time I improved my skills and produced a facial recognition lunch system for my coursework using python, alongside various smaller personal projects.</p>
+			<p>If I hadn’t been motivated to learn new skills, I likely wouldn’t have been able to improve my programming so rapidly.</p>
+			<p>Motivation to develop new skills, greatly helps me in lectures, tutorials, and lab sessions, as I am genuinely interested in the information being taught in lectures and wish to improve my skillset with it. Similarly, labs and tutorials are a practical opportunity to get hands on practice. Being motivated to learn new skills, makes these sessions seem less like mandatory tasks more enjoyable.</p> 
+		</div>
+	
+		<div id="contact">
+			<img src="https://raw.githubusercontent.com/JaysinhMaher/Coursework-unit-2---HTML-CV/main/cv-image.png" alt="CV image" style="width:168px;height:168px;">
+			<p>Jaysinh Maher</p>
+			<hr class="hr-rounded">
+			<h2 class="underline">Contact information:</h2>
+			<hr class="hr-rounded">
+			<p>Telephone: 1234-1234-1234</p>
+			<p>Email: jaysinhmaher@hotmail.co.uk</p>
+			<p>Location: Leicester</p>
+			<hr class="hr-rounded">
+			
+			<a href="https://github.com/jaysinhmaher" target="_blank"><img src="https://raw.githubusercontent.com/JaysinhMaher/Coursework-unit-2---HTML-CV/main/GitHub-Emblem.png" alt="GitHub" style="width:300px;height:175px;">
+			</a>
+			
+			<hr class="hr-rounded">
+			<a href="https://le.ac.uk" target="_blank"><img src="https://raw.githubusercontent.com/JaysinhMaher/Coursework-unit-2---HTML-CV/main/UoL-Logo-Full-Colour.png" alt="University" style="width:300px;height:100px;"></a>
+			
+			<hr class="hr-rounded">
+			<a href="https://pvsltd.co.uk/" target="_blank"><img src="https://raw.githubusercontent.com/JaysinhMaher/Coursework-unit-2---HTML-CV/main/PVS-Emblem.PNG" alt="University" style="width:300px;height:100px;"></a>
+			
+			<hr class="hr-rounded">
+			
+			<div id="wrap">
+			
+			<img src="https://raw.githubusercontent.com/JaysinhMaher/Coursework-unit-2---HTML-CV/main/Steve%20Jobs%20Background.jpg" id="QuoteIMG">
+			
+			<div class="QuoteContent">
+				<p class="Quote">"Everyone in this country should learn to program a computer because it teaches you how to think"</p>
+				<p>- Steve Jobs</p>
+			</div>
+			</div>
+		</div>    
+		</div>
+	</body>
+</html>
